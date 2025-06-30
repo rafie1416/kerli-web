@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="sidebar">
+      <div class="logo">KERLI AAVA</div>
+      <ul class="nav-links">
+        <li><a href="Light.html">Link 1</a></li>
+        <li><a href="index.html">link 2</a></li>
+        <li><a href="#page-3">link 3</a></li>
+        <li><a href="#page-4">link 4</a></li>
+      </ul>
+    </div>
+
+    <div class="side-menu">
+      <a href="#" id="hamburger-menu"><i data-feather="menu"></i> </a>
+    </div>
+
+    <div class="main-content">
+      <section class="hero" id="#">
+        <div class="image-container">
+          <div class="image">
+            <img src="example.jpg" alt="kerli" class="hero-image" />
+          </div>
+          <div class="lorem-text">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam.
+          </div>
+        </div>
+      </section>
+
+      <section class="quote-section" id="#">
+        <div class="quote-container">
+          <div>
+            <div class="quote">
+              "There is nothing more exciting than when you find an idea, or a
+              product, or a person worth guiding out of obscurity into the
+              light."
+            </div>
+            <div class="quote-author">-Richard Rudd</div>
+          </div>
+        </div>
+        <div class="text-container">
+          <div class="text-content">
+            <p>
+              I’m a designer, creative guide and visionary who supports women
+              and conscious entrepreneurs to express themselves more clearly,
+              authentically, and in energetic alignment. My approach is
+              intuitive and grounded — I listen deeply, and then translate that
+              into form through structure, clarity, and strong design
+              principles. This work is not just about visuals. It’s about
+              resonance. And about finding the most natural, aligned way to be
+              seen.
+            </p>
+          </div>
+          <div class="buttons">
+            <button class="btn">LEARN MORE</button>
+            <button class="btn">LEARN MORE</button>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <script>
+      // Simple scroll animation
+      document.querySelectorAll(".nav-links a").forEach((anchor) => {
+        anchor.addEventListener("click", function (e) {
+          e.preventDefault();
+          const targetId = this.getAttribute("href");
+          const targetElement = document.querySelector(targetId);
+
+          window.scrollTo({
+            top: targetElement.offsetTop,
+            behavior: "smooth",
+          });
+        });
+      });
+    </script>
+
+    <!-- feather icons -->
+    <script>
+      feather.replace();
+    </script>
+  </body>
+</html>
