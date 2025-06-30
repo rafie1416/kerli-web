@@ -103,3 +103,39 @@ body {
   margin-left: auto;
   margin-right: 300px; /* match your container's margin-right */
 }
+
+@media (max-width: 768px) {
+  .sidebar {
+    width: 100%;
+    height: auto;
+    position: relative;
+    padding: 20px;
+  }
+
+  .logo {
+    font-size: 16px;
+    margin-bottom: 40px;
+  }
+
+  .nav-links {
+    padding: 1rem;
+  }
+
+  .nav-links li {
+    margin-bottom: 20px;
+  }
+
+  .caption,
+  .text {
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+  }
+
+  .container,
+  .sections {
+    width: 90%;
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
